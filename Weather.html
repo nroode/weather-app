@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="Weather.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div id="displayBk">
+        <h1>Local Weather</h1>
+        <h2 id="location"></h2>
+
+        <div id="weatherDisplay">
+
+            <h3>Currently</h3>
+
+            <div id="upper">
+                <div id="temp"></div>
+
+                <div id="changeTemp">
+                        <button id="f">
+                            <span></span>F</button>
+                        <button id="c">
+                            <span></span>C</button>
+                    </div>
+            </div>
+
+            <div id="lower">
+                <div id="icon">
+                    
+                </div>
+                <div id="lower-description">
+                    <div id="type"></div>
+                    <div id="description"></div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Weather.js"></script>
+</body>
+
+</html>
