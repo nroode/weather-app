@@ -11,8 +11,8 @@ $('#c').addClass('selected');
 function getWeather() {
 
     navigator.geolocation.getCurrentPosition(function (position) {
-        var lat = Math.floor(position.coords.latitude);
-        var long = Math.floor(position.coords.longitude);
+        var lat = position.coords.latitude;
+        var long = position.coords.longitude;
 
         var apiUrl = "https://fcc-weather-api.glitch.me/api/current?lat=35&lon=139";
         var url2 = "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + long ;
